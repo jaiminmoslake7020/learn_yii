@@ -1,15 +1,9 @@
-
-
-DROP DATABASE `advanced`;
-
-SET FOREIGN_KEY_CHECKS = 0 ;
-
 -- phpMyAdmin SQL Dump
 -- version 4.5.1
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 02, 2016 at 09:44 PM
+-- Generation Time: Jul 01, 2016 at 08:45 PM
 -- Server version: 10.1.13-MariaDB
 -- PHP Version: 5.6.20
 
@@ -56,13 +50,6 @@ CREATE TABLE `auth_assignment` (
   `created_at` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
---
--- Dumping data for table `auth_assignment`
---
-
-INSERT INTO `auth_assignment` (`item_name`, `user_id`, `created_at`) VALUES
-('member', 2, 1467481902);
-
 -- --------------------------------------------------------
 
 --
@@ -78,23 +65,6 @@ CREATE TABLE `auth_item` (
   `created_at` int(11) DEFAULT NULL,
   `updated_at` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
-
---
--- Dumping data for table `auth_item`
---
-
-INSERT INTO `auth_item` (`name`, `type`, `description`, `rule_name`, `data`, `created_at`, `updated_at`) VALUES
-('adminArticle', 2, 'Allows admin+ roles to manage articles', NULL, NULL, 1467481850, 1467481850),
-('client', 1, 'client of this application', NULL, NULL, 1467481850, 1467481850),
-('createArticle', 2, 'Allows editor+ roles to create articles', NULL, NULL, 1467481850, 1467481850),
-('deleteArticle', 2, 'Allows admin+ roles to delete articles', NULL, NULL, 1467481850, 1467481850),
-('editor', 1, 'Editor of this application', NULL, NULL, 1467481850, 1467481850),
-('manageUsers', 2, 'Allows admin+ roles to manage users', NULL, NULL, 1467481850, 1467481850),
-('member', 1, 'Registered users, members of this site', NULL, NULL, 1467481850, 1467481850),
-('premium', 1, 'Premium members. They have more permissions than normal members', NULL, NULL, 1467481850, 1467481850),
-('support', 1, 'Support staff', NULL, NULL, 1467481850, 1467481850),
-('System_Super_Admin', 1, 'Administrator of this application', NULL, NULL, 1467481850, 1467481850),
-('theCreator', 1, 'You!', NULL, NULL, 1467481850, 1467481850);
 
 -- --------------------------------------------------------
 
@@ -159,10 +129,7 @@ CREATE TABLE `session` (
 --
 
 INSERT INTO `session` (`id`, `expire`, `data`) VALUES
-('3shsm6jhvb3uhs9dfgqeeoohf0', 1467482648, 0x5f5f666c6173687c613a303a7b7d),
-('5t6r4ava25nfrmnukpluokmb61', 1467399195, 0x5f5f666c6173687c613a303a7b7d),
-('eh3lmljhqfs4nmp8pr3psiiod4', 1467489946, 0x5f5f666c6173687c613a303a7b7d5f5f72657475726e55726c7c733a31393a222f6c6561726e5f7969692f6261636b656e642f223b5f5f636170746368612f736974652f636170746368617c733a363a2274616471766e223b5f5f636170746368612f736974652f63617074636861636f756e747c693a313b),
-('ssrhfv7s3t6lo8vfrq9sl2gb50', 1467483343, 0x5f5f666c6173687c613a303a7b7d5f5f69647c693a323b);
+('5t6r4ava25nfrmnukpluokmb61', 1467399195, 0x5f5f666c6173687c613a303a7b7d);
 
 -- --------------------------------------------------------
 
@@ -182,14 +149,6 @@ CREATE TABLE `user` (
   `created_at` int(11) NOT NULL,
   `updated_at` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
-
---
--- Dumping data for table `user`
---
-
-INSERT INTO `user` (`id`, `username`, `email`, `password_hash`, `status`, `auth_key`, `password_reset_token`, `account_activation_token`, `created_at`, `updated_at`) VALUES
-(1, 'jaimin', 'jaiminmoslake7020@gmail.com', '$2y$13$pbJASgkH6Wd51lWBf27hCON/Ng8Km3Klri4tt0ugC8c1WkhA.Ioda', 10, 'tkfqybdD5aGSmzg0xoFi3cfB0-rRT9HD', NULL, NULL, 1467481415, 1467481415),
-(2, 'jaimin_moslake', 'jaiminmoslake7022@gmail.com', '$2y$13$vGz3eZW1dE0uKSnefnNgrerUde8arppVxSVusBlh39ubu2OTlejXi', 10, 'K-J62jl_HBF0liJ_bOUMWr4b-Uw93-zy', NULL, NULL, 1467481902, 1467481902);
 
 --
 -- Indexes for dumped tables
@@ -263,7 +222,7 @@ ALTER TABLE `article`
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- Constraints for dumped tables
 --
@@ -296,5 +255,3 @@ ALTER TABLE `auth_item_child`
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
-
-SET FOREIGN_KEY_CHECKS = 1 ;
