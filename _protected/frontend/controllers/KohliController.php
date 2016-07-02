@@ -98,7 +98,7 @@ class SiteController extends Controller
      */
     public function actionAbout()
     {
-        return $this->render('m1');
+        return $this->render('about');
     }
 
     /**
@@ -106,11 +106,6 @@ class SiteController extends Controller
      *
      * @return string|\yii\web\Response
      */
-    public function actionHimauli()
-    {
-        return $this->render('h1');
-    }
-
     public function actionContact()
     {
         $model = new ContactForm();

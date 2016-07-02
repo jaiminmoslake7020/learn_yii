@@ -7,6 +7,7 @@ require(__DIR__ . '/_protected/vendor/yiisoft/yii2/Yii.php');
 require(__DIR__ . '/_protected/common/config/bootstrap.php');
 require(__DIR__ . '/_protected/frontend/config/bootstrap.php');
 
+
 $config = yii\helpers\ArrayHelper::merge(
     require(__DIR__ . '/_protected/common/config/main.php'),
     require(__DIR__ . '/_protected/common/config/main-local.php'),

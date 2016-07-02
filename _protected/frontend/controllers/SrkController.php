@@ -21,7 +21,7 @@ use Yii;
  * It is responsible for displaying static pages, logging users in and out,
  * sign up and account activation, password reset.
  */
-class SiteController extends Controller
+class SrkController extends Controller
 {
     /**
      * Returns a list of behaviors that this component should behave as.
@@ -98,7 +98,7 @@ class SiteController extends Controller
      */
     public function actionAbout()
     {
-        return $this->render('m1');
+        return $this->render('about');
     }
 
     /**
@@ -106,11 +106,6 @@ class SiteController extends Controller
      *
      * @return string|\yii\web\Response
      */
-    public function actionHimauli()
-    {
-        return $this->render('h1');
-    }
-
     public function actionContact()
     {
         $model = new ContactForm();
@@ -280,6 +275,8 @@ class SiteController extends Controller
      */
     public function actionSignup()
     {
+        echo "Hi";
+        exit;
        // echo "hi";
        // exit;
         // get setting value for 'Registration Needs Activation'

@@ -19,6 +19,9 @@ class ArticleController extends FrontendController
      */
     public function actionIndex()
     {
+        //echo "hello";
+        //exit;
+
         /**
          * How many articles we want to display per page.
          * @var integer

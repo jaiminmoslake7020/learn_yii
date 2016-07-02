@@ -6,7 +6,7 @@ $this->title = Yii::t('app', Yii::$app->name);
 <div class="site-index">
 
     <div class="jumbotron">
-        <h1>Bon Voyage</h1>
+        <h1>Congratulations!</h1>
 
         <p class="lead">You have successfully installed Yii2 improved application template</p>
 
