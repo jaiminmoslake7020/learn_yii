@@ -2,6 +2,9 @@
 
 DROP DATABASE `advanced`;
 
+CREATE DATABASE `advanced`;
+USE  `advanced`;
+
 SET FOREIGN_KEY_CHECKS = 0 ;
 
 -- phpMyAdmin SQL Dump
