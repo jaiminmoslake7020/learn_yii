@@ -9,7 +9,21 @@
 namespace frontend\controllers;
 
 
+<<<<<<< Updated upstream
 use yii\web\Controller;
+=======
+    /**
+     * Displays the about static page.
+     *
+     * @return string
+     */
+    public function actionAbout()
+    {
+        //  /  frontend/views/majnoo/about.php
+        //
+        return $this->render('about');
+    }
+>>>>>>> Stashed changes
 
 class MajnooController extends Controller
 {

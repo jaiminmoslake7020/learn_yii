@@ -4,6 +4,7 @@ namespace frontend\controllers;
 use common\models\User;
 use common\models\LoginForm;
 use frontend\models\AccountActivation;
+use frontend\models\Books;
 use frontend\models\PasswordResetRequestForm;
 use frontend\models\ResetPasswordForm;
 use frontend\models\SignupForm;
@@ -88,6 +89,11 @@ class SiteController extends Controller
     {
         //echo "HI exit; now";
         //exit;
+
+
+
+
+
         return $this->render('index');
     }
 
@@ -134,6 +140,26 @@ class SiteController extends Controller
             'model' => $model,
         ]);
     }
+
+
+    public function actionFirst()
+    {
+        $model = new Books();
+
+        if ($model->load(Yii::$app->request->post())) {
+            if ($model->validate()) {
+                // form inputs are valid, do something here
+                return;
+            }
+        }
+
+        //  frontend/views/site/first.php
+        // frontend/views/site/second.php
+        return $this->render('second', [
+            'model' => $model,
+        ]);
+    }
+
 
 //------------------------------------------------------------------------------------------------//
 // LOG IN / LOG OUT / PASSWORD RESET
