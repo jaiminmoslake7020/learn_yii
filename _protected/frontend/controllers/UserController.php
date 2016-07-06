@@ -9,6 +9,7 @@
 namespace frontend\controllers;
 
 
+use common\models\Device;
 use yii\web\Controller;
 use Yii;
 use frontend\models\Books;
@@ -23,6 +24,17 @@ class UserController extends Controller
         return $this->render('pani-puri', [
             'model' => $model,
         ]);
+    }
+
+
+    public function actionAddDevice()
+    {
+        $model = new Device();
+
+
+        return $this->render(
+            'device-view',['data'=>$model]
+        );
     }
 
 }
