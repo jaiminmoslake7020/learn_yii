@@ -72,7 +72,13 @@ class User extends \yii\db\ActiveRecord
     {
         return [
 
-
+/*
+            [
+                [],attributes array
+                validatorType,
+                options
+            ],
+*/
 
             [['password', 'username','confirm_password','email', 'birth_date'], 'required'],
 

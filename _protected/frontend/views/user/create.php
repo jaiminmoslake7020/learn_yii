@@ -11,7 +11,7 @@ use yii\widgets\ActiveForm;
 
     <?php $form = ActiveForm::begin(); ?>
 
-        <?= $form->errorSummary($model); ?>
+        <?= $form->errorSummary([$model,$model2]); ?>
 
         <?= $form->field($model, 'username') ?>
         <?= $form->field($model, 'email') ?>
@@ -19,6 +19,11 @@ use yii\widgets\ActiveForm;
         <?= $form->field($model, 'password')->passwordInput(); ?>
         <?= $form->field($model, 'confirm_password')->passwordInput() ?>
 
+        <?= $form->field($model2, 'name')->textInput() ?>
+        <?= $form->field($model2, 'description')->textInput() ?>
+
+    
+    
         <div class="form-group">
             <?= Html::submitButton('Submit', ['class' => 'btn btn-primary']) ?>
         </div>
