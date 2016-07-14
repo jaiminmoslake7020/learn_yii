@@ -18,6 +18,10 @@ $form = \yii\bootstrap\ActiveForm::begin([
 
         <?php echo $form->field($data,'device_name')->textInput(); ?>
         <?php echo $form->field($data,'created_at')->textInput(); ?>
+        <?php echo $form->field($data,'created_at')->textInput(); ?>
+        <?php echo $form->field($data,'created_at')->textInput(); ?>
+        <?php echo $form->field($data,'created_at')->textInput(); ?>
+        <?php echo $form->field($data,'created_at')->textInput(); ?>
         <?php echo $form->field($data,'updated_at')->textInput(); ?>
 
         <?php echo \yii\bootstrap\Html::submitButton('Submit', ['class'=>'btn btn-success']); ?>
