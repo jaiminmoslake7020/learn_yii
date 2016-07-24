@@ -16,7 +16,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <div class="col-lg-5 well bs-component">
 
-        <p><?= Yii::t('app', 'Please choose your new password:') ?></p>
+        <p><?= Yii::t('app', 'Please choose your phone password:') ?></p>
 
         <?php $form = ActiveForm::begin(['id' => 'reset-password-form']); ?>
 

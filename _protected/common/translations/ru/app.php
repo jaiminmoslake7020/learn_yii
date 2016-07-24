@@ -50,7 +50,7 @@ return [
     'Reset password' => 'Сбросить пароль',
     'A link to reset password will be sent to your email.' => 'Ссылка для сброса пароля будет отправлена на Ваш E-mail',
     'Check your email for further instructions.' => 'Проверьте Ваш email для получения дальнейших инструкций.',
-    'Please choose your new password:' => 'Пожалуйста укажите новый пароль:',
+    'Please choose your phone password:' => 'Пожалуйста укажите новый пароль:',
     'New password was saved.' => 'Новый пароль был сохранён.',
     'Sorry, we are unable to reset password for email provided.' => 'К сожалению вы не можете сбросить пароль для данного email.',
     'Password reset token cannot be blank.' => 'Код для сброса пароля не может быть пустым.',

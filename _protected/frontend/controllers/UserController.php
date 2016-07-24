@@ -12,6 +12,8 @@ namespace frontend\controllers;
 use common\components\AppBasic;
 use common\models\Device;
 use common\models\User;
+use frontend\models\Project;
+use frontend\models\ProjectTeamMembers;
 use yii\base\Application;
 use yii\web\Controller;
 use Yii;
@@ -92,5 +94,50 @@ class UserController extends Controller
             'device-view',['data'=>$model]
         );
     }
+
+    public function actionProject()
+    {
+        $model = new Project();
+        $modelMembers = new ProjectTeamMembers();
+
+
+        //0ppBasic::printRT($model->attributes,"BEFOREE LOAD");
+        if($model->load(Yii::$app->request->post()) && isset($_POST['ProjectTeamMembers']))
+        {
+          // AppBasic::printRT($_POST,"AFTER LOAD");
+          // exit;
+
+
+            if($model->save())
+            {
+                $projectId = $model->project_id;
+
+                for($i = 0 ; $i < sizeof($_POST['ProjectTeamMembers']); $i++)
+                {
+                    $modelMembers = new ProjectTeamMembers();
+                    $modelMembers->setAttributes($_POST['ProjectTeamMembers'][$i]);
+                    $modelMembers->project_id = $projectId ;
+
+
+                    if(!$modelMembers->save())
+                    {
+                       AppBasic::printR($modelMembers->getErrors());
+                    }
+                }
+            }
+
+
+        }
+
+
+        return $this->render('project', [
+            'model' => $model,
+            'modelMembers'=>$modelMembers
+        ]);
+    }
+
+
+
+
 
 }

@@ -426,5 +426,21 @@ class SiteController extends Controller
         }
 
         return $this->redirect('login');
+
+    }
+    public function actionForm()
+    {
+        $model = new app\models\Books();
+
+        if ($model->load(Yii::$app->request->post())) {
+            if ($model->validate()) {
+                // form inputs are valid, do something here
+                return;
+            }
+        }
+
+        return $this->render('form', [
+            'model' => $model,
+        ]);
     }
 }

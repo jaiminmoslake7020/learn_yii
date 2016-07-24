@@ -45,7 +45,7 @@ class UserController extends BackendController
     }
 
     /**
-     * Creates a new User model.
+     * Creates a phone User model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      *
      * @return string|\yii\web\Response
@@ -110,7 +110,7 @@ class UserController extends BackendController
         if ($user->load(Yii::$app->request->post()) && 
             $role->load(Yii::$app->request->post()) && Model::validateMultiple([$user, $role])) 
         {
-            // only if user entered new password we want to hash and save it
+            // only if user entered phone password we want to hash and save it
             if ($user->password) 
             {
                 $user->setPassword($user->password);

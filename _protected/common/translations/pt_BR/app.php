@@ -49,7 +49,7 @@ return [
     'Reset password' => 'Criar uma nova senha.',
     'A link to reset password will be sent to your email.' => 'Um link para recuperação da senha será enviado ao seu email.',
     'Check your email for further instructions.' => 'Verifique seu email e siga as instruções.',
-    'Please choose your new password:' => 'Por favor, digite uma nova senha:',
+    'Please choose your phone password:' => 'Por favor, digite uma nova senha:',
     'New password was saved.' => 'Nova senha salva.',
     'Sorry, we are unable to reset password for email provided.' => 'Infelizmente não foi possível resetar a senha para o email fornecido.',
     'Password reset token cannot be blank.' => 'O token para resetar a senha não pode estar em branco.',

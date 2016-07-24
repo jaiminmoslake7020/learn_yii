@@ -49,7 +49,7 @@ return [
     'Reset password' => 'Resetovanje lozinke',
     'A link to reset password will be sent to your email.' => 'Link za reset lozinke će Vam biti poslat na Vaš E-mail',
     'Check your email for further instructions.' => 'Poslali smo Vam email sa uputstvima.',
-    'Please choose your new password:' => 'Molimo Vas da izaberete Vašu novu Lozinku:',
+    'Please choose your phone password:' => 'Molimo Vas da izaberete Vašu novu Lozinku:',
     'New password was saved.' => 'Nova lozinka je sačuvana.',
     'Sorry, we are unable to reset password for email provided.' => 'Žao nam je, ne možemo da resetujemo lozinku za dati email.',
     'Password reset token cannot be blank.' => 'Token ne može biti prazan.',

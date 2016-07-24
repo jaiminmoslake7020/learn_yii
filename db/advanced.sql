@@ -1,7 +1,5 @@
 
 
-DROP DATABASE `advanced`;
-
 CREATE DATABASE `advanced`;
 USE  `advanced`;
 

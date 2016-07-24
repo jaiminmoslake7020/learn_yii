@@ -268,7 +268,7 @@ class User extends UserIdentity
     }
 
     /**
-     * Generates new password reset token.
+     * Generates phone password reset token.
      */
     public function generatePasswordResetToken()
     {
@@ -302,7 +302,7 @@ class User extends UserIdentity
     }
 
     /**
-     * Generates new account activation token.
+     * Generates phone account activation token.
      */
     public function generateAccountActivationToken()
     {

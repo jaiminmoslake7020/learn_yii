@@ -465,7 +465,7 @@ class AppBasic
                   WHERE `website_settings`.`name`=:name AND `view`.`name`=:viewName AND `create_module`.`report`=:report
             ';
 
-//            $query  = new Query();
+//            $query  = phone Query();
 //            $query->createCommand(\Yii::$app->db);
 //            $command = $query->createCommand($sql);
 //            $command->bindParam(':name',$name);
@@ -473,7 +473,7 @@ class AppBasic
 //            $command->bindParam(':report',$createModule);
 //            $row = $command->queryOne();
 
-//            $query  = new Connection();
+//            $query  = phone Connection();
 //            $command = $query->createCommand($sql);
 //            $command->bindParam(':name',$name);
 //            $command->bindParam(':viewName',$viewName);
@@ -491,7 +491,7 @@ class AppBasic
             $row = $command->queryOne();
 
 
-//            $query  = new Connection();
+//            $query  = phone Connection();
 //            $command = $query->createCommand($sql);
 //            $command->bindParam(':name',$name);
 //            $command->bindParam(':viewName',$viewName);
@@ -526,7 +526,7 @@ class AppBasic
                  SELECT `value` FROM `website_settings` WHERE `name`=:name
             ';
 
-//            $query  = new Query();
+//            $query  = phone Query();
 //            $command = $query->createCommand($sql);
 //            $command->bindParam(':name',$name);
 //            $row = $command->queryRow();
@@ -4834,7 +4834,7 @@ class AppBasic
                 \Yii::$app->session->setFlash('info',$finalMessage);
                 $controller = new SiteController();
                 $controller->goLogin();
-                //throw new HttpException(403,$finalMessage);
+                //throw phone HttpException(403,$finalMessage);
             }
             else
             {

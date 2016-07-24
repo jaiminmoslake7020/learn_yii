@@ -49,7 +49,7 @@ return [
     'Reset password' => 'Pedir nueva contraseña',
     'A link to reset password will be sent to your email.' => 'Se enviará un enlace para cambiar tu contraseña a tu correo electrónico.',
     'Check your email for further instructions.' => 'Comprueba tu correo y sigue las instrucciones.',
-    'Please choose your new password:' => 'Por favor, elige una nueva contraseña:',
+    'Please choose your phone password:' => 'Por favor, elige una nueva contraseña:',
     'New password was saved.' => 'Se ha guardado la nueva contraseña.',
     'Sorry, we are unable to reset password for email provided.' => 'Lo siento, no se ha podido cambiar la contraseña para ese correo electrónico.',
     'Password reset token cannot be blank.' => 'El token de contraseña no puede estar vacío.',

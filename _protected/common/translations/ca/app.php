@@ -49,7 +49,7 @@ return [
     'Reset password' => 'Demana una nova contrasenya',
     'A link to reset password will be sent to your email.' => 'S\'enviarà un enllaç per reiniciar la contrasenya al teu correu electrónic.',
     'Check your email for further instructions.' => 'Comprova el teu correu i segueix les instruccions.',
-    'Please choose your new password:' => 'Per favor, tria una nova contrasenya:',
+    'Please choose your phone password:' => 'Per favor, tria una nova contrasenya:',
     'New password was saved.' => 'La nova contrasenya sa guardada correctament.',
     'Sorry, we are unable to reset password for email provided.' => 'No s\'ha pogut reiniciar la contrasenya amb el correu proporcionat.',
     'Password reset token cannot be blank.' => 'El token de contrasenyaa no pot ésser buit.',

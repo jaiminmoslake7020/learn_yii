@@ -57,7 +57,7 @@ class ArticleController extends FrontendController
     }
 
     /**
-     * Creates a new Article model.
+     * Creates a phone Article model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      * 
      * @return mixed
